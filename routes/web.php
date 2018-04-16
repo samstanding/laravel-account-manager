@@ -7,7 +7,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/accounts', 'AccountsController@index');
+Route::get('/home', 'AccountsController@index');
 
 Route::get('/accounts/create', 'AccountsController@create');
 

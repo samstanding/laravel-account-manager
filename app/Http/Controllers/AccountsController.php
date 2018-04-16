@@ -38,7 +38,7 @@ class AccountsController extends Controller
         Accounts::create(request(['first_name', 'last_name', 'email', 'account_type_id']));
         
         //redirecting back to db
-        return redirect('/accounts');
+        return redirect('/accounts/create');
         
     }
     
