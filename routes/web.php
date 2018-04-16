@@ -13,3 +13,4 @@ Route::get('/accounts/create', 'AccountsController@create');
 
 Route::post('/create', 'AccountsController@store');
 
+Route::get('/accounts/types', 'TypesController@index');
