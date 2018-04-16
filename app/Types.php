@@ -2,9 +2,12 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Model;
 
 class Types extends Model
 {
-    //
+    public function accounts() 
+    {
+        return $this->hasMany(Accounts::class);
+    }
 }

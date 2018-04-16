@@ -1,0 +1,35 @@
+@extends('layouts.app')
+
+@section('content')
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+        <h1>Your Accounts</h1>
+        <table class="table">
+<thead>
+<th> Account Holder Name </th>
+<th> E-mail </th>
+<th> Status </th>
+</thead>
+<tbody>
+@foreach($accounts as $account)
+      <tr>
+      <td>
+      {{$account->first_name}}  {{$account->last_name}} 
+      </td>
+      <td>
+      {{$account->email}}
+      </td>
+      <td>
+      {{$account->account_type}}
+      </td>
+    @endforeach
+    </tbody>
+</table>
+        
+            </div>
+    </div>
+</div>
+
+@endsection
