@@ -9,3 +9,7 @@ Auth::routes();
 
 Route::get('/accounts', 'AccountsController@index');
 
+Route::get('/accounts/create', 'AccountsController@create');
+
+Route::post('/create', 'AccountsController@store');
+

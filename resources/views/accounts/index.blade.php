@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-        <h1>Your Accounts</h1>
+        <h1>All Of Your Accounts</h1>
         <table class="table">
 <thead>
 <th> Account Holder Name </th>
