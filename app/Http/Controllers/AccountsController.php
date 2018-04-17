@@ -20,8 +20,8 @@ class AccountsController extends Controller
 
     public function create() 
     {
+        //routes to the new account form
         return view('accounts.create');
-
     }
     
     public function store()
@@ -42,9 +42,19 @@ class AccountsController extends Controller
         
     }
     
-  public function show($id)
+  public function edit(Account $account)
   {
-      return view('accounts.show');
+      
+      return view('accounts.view', compact('account'));
+  }
+
+  public function update(Request $request, Account $account) 
+  {
+    
+    $account->update($request->all());
+    
+    return back();
+
   }
 
 }

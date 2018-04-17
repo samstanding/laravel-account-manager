@@ -13,10 +13,13 @@ Route::get('/accounts/create', 'AccountsController@create')->name('create');
 
 Route::post('/create', 'AccountsController@store');
 
-//is this working??
-Route::get('/accounts/{$id}', 'AccountsController@show');
-
 Route::get('/accounts/types', 'TypesController@index')->name('types');
 
-Route::get('/types/{type}', 'TypesController@show');
+//this route is not routing to me to the right controller-- or at least thats how it appears
+// Route::get('/accounts/{$id}', 'AccountsController@account');
 
+// Route::get('/types/{type}', 'TypesController@type');
+
+// Route::get('/accounts/{$id}/edit', 'AccountsController@edit');
+
+Route::patch('/accounts/{account}, AccountsController@update');
