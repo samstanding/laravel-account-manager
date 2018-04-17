@@ -44,8 +44,9 @@ class AccountsController extends Controller
     
     public function view($_id)
      {
-
+        //joins the account types to the accoun
         $account = Accounts::join('types', 'types.id', '=', 'accounts.types_id')->find($_id);
+        //directs to the view file to display
         return view('accounts.view', compact('account'));
      }
 
