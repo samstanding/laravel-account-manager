@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
             'first_name'=>str_random(8),
            'last_name'=>str_random(8),
            'email'=>str_random(8).'@gmail.com',
-           'account_type_id'=>App\Types::all()->random()->id
+           'type_id'=>App\Types::all()->random()->id
         ]);
     }
 }

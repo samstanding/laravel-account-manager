@@ -14,4 +14,9 @@ class TypesController extends Controller
 
         return view('types.index', compact('types'));
     }
+
+    public function show(Types $type)
+    {
+        return view('types.accounts', compact('type'));
+    }
 }

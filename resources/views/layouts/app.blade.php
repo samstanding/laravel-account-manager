@@ -34,8 +34,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li><a class="nav-link" href="accounts/create">Create Account</a></li>
-                        <li><a class="nav-link" href="accounts/types">Accounts By Type</a></li>
+                        <li><a class="nav-link" href="{{ route('create') }} ">Create Account</a></li>
+                        <li><a class="nav-link" href="{{ route('types') }} ">Accounts By Type</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

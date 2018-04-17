@@ -12,7 +12,7 @@ class AccountsController extends Controller
     public function index() 
     {
         //I want to display the account types, so I need to join the types table to my accounts table
-        $accounts = Accounts::join('types', 'types.id', '=', 'accounts.account_type_id')->get();
+        $accounts = Accounts::join('types', 'types.id', '=', 'accounts.type_id')->get();
 
         return view ('accounts.index', compact('accounts'));
 
@@ -35,7 +35,7 @@ class AccountsController extends Controller
         ]);
 
         //sending form data to db
-        Accounts::create(request(['first_name', 'last_name', 'email', 'account_type_id']));
+        Accounts::create(request(['first_name', 'last_name', 'email', 'type_id']));
         
         //redirecting back to db
         return redirect('/accounts/create');

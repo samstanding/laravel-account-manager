@@ -9,7 +9,7 @@
         <h1>Account Types</h1>
         <ul class="list-group"> 
         @foreach ($types as $type)
-        <li><a href="/types/{{$type->id}}">{{$type->account_type}}</a></li>
+        <li class="list-group-item"><a href="/types/{{$type->id}}">{{$type->account_type}}</a></li>
         @endforeach
         </ul>
 
