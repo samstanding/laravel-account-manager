@@ -19,4 +19,4 @@ Route::get('/types/{type}', 'TypesController@type');
 
 Route::get('/accounts/{id}', 'AccountsController@view');
 
-Route::patch('/accounts/{account}, AccountsController@update');
+Route::patch('/accounts/{account}/edit, AccountsController@update');

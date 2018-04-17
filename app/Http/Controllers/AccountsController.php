@@ -44,7 +44,7 @@ class AccountsController extends Controller
     
     public function view($_id)
      {
-         
+
         $account = Accounts::join('types', 'types.id', '=', 'accounts.types_id')->find($_id);
         return view('accounts.view', compact('account'));
      }
@@ -54,7 +54,7 @@ class AccountsController extends Controller
     
     $account->update($request->all());
     
-    return back();
+    return view ('accounts.index');
 
   }
 

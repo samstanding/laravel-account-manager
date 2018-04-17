@@ -23,6 +23,26 @@
       <td>
       {{$account->account_type}}
       </td>
+      <td>
+      <form method="POST" action="/accounts/{{$account->id}}/edit">
+      {{method_field('PATCH')}}
+      {{csrf_field() }}
+      <div class="input-group">
+                <select class="custom-select" id="types_id" name="types_id">
+                    <option selected>Choose Account Type</option>
+                    <option value="1">Set-up</option>
+                    <option value="2">Confirmation</option>
+                    <option value="3">Activated</option>
+                    <option value="4">Deactivated</option>
+                </select>
+                </div>
+                </td>
+                <td>
+                <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save Account</button>
+            </div>
+            </form>
+            </td>
     </tbody>
 </table>
         </div>
