@@ -42,8 +42,9 @@ class AccountsController extends Controller
         
     }
     
-
-
-
+  public function show($id)
+  {
+      return view('accounts.show');
+  }
 
 }
