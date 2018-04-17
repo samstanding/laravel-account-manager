@@ -18,7 +18,7 @@
 @foreach($accounts as $account)
       <tr>
       <td>
-      <a href="/accounts/{{$account->_id}}/edit">
+      <a href="/accounts/{{$account->id}}">
       {{$account->first_name}}  {{$account->last_name}} 
       </a>
       </td>

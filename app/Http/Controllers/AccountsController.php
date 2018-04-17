@@ -42,11 +42,12 @@ class AccountsController extends Controller
         
     }
     
-  public function edit(Account $account)
-  {
-      
-      return view('accounts.view', compact('account'));
-  }
+    public function view($_id)
+     {
+         
+        $account = Accounts::join('types', 'types.id', '=', 'accounts.types_id')->find($_id);
+        return view('accounts.view', compact('account'));
+     }
 
   public function update(Request $request, Account $account) 
   {
