@@ -25,7 +25,7 @@
                 <input type="text" class="form-control" id="email" name="email"  required >
             </div>
             <div class="input-group">
-                <select class="custom-select" id="account_type_id" name="account_type_id">
+                <select class="custom-select" id="type_id" name="type_id">
                     <option selected>Choose Account Type</option>
                     <option value="1">Set-up</option>
                     <option value="2">Confirmation</option>
@@ -33,7 +33,7 @@
                     <option value="4">Deactivated</option>
                 </select>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit Player</button>
+                <button type="submit" class="btn btn-primary">Save Account</button>
             </div>
             </form>
         </div>

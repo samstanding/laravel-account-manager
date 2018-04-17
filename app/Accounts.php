@@ -2,11 +2,9 @@
 
 namespace App;
 
-use App\Model;
-
 class Accounts extends Model
 {
-    public function post() 
+    public function types() 
     {
         return $this->belongsTo(Types::class);
     }

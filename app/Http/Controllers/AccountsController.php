@@ -31,7 +31,7 @@ class AccountsController extends Controller
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required',
-            'account_type_id' => 'required',
+            'type_id' => 'required',
         ]);
 
         //sending form data to db
