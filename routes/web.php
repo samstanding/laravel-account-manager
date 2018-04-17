@@ -18,7 +18,7 @@ Route::get('/accounts/types', 'TypesController@index')->name('types');
 //this route is not routing to me to the right controller-- or at least thats how it appears
 // Route::get('/accounts/{$id}', 'AccountsController@account');
 
-// Route::get('/types/{type}', 'TypesController@type');
+Route::get('/types/{type}', 'TypesController@type');
 
 // Route::get('/accounts/{$id}/edit', 'AccountsController@edit');
 

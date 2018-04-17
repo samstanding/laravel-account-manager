@@ -18,7 +18,7 @@ class CreateAccountsTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email');    
-            $table->integer('type_id');
+            $table->integer('types_id');
             $table->boolean('active')->default(false);        
             $table->timestamps();
         });

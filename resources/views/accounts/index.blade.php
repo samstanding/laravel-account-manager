@@ -29,9 +29,9 @@
       {{$account->account_type}}
       </td>
       <td>
-      <form method="POST" action="/account/{$account}">
+      <form method="POST" action="/accounts/{$account}">
       {{method_field('PATCH')}}
-      <!-- {{csrf_field() }} -->
+      {{csrf_field() }}
       <div class="input-group">
                 <select class="custom-select" id="type_id" name="type_id">
                     <option selected>Choose Account Type</option>

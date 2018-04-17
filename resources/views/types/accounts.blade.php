@@ -4,23 +4,19 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        
-<!-- <h1>{{$type->account_type}} </h1>-->
-<!-- PAGE IS THROWING UP AN UNDEFINED OFFSET: 1 Error -->
-<!-- unclear to me why  -->
-<div class="col-md-8">
+    <div class="col-md-8">
+<h1>{{$type->account_type}} </h1>
 <ul class="list-group">
-<!-- @foreach($type) -->
-
-<h1>Bag of dicks</h1>
-<!-- {{$account->first_name}} {{$account->last_name}}  -->
-
-
-<!-- @endforeach -->
+@foreach($type->accounts as $account)
+<li class="list-group-item">
+{{$account->first_name}} {{$account->last_name}}
+</li>
+@endforeach
 </ul>
 </div>
 </div>
 </div>
+
 
 
 
